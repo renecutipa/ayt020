@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './components/users/users.component';
 
-import { MatTableModule, MatPaginator, MatSort, MatTableDataSource } from '@angular/material';
+import { MatTableModule, MatSortModule, MatPaginatorModule, MatInputModule} from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 
 import { UserService } from './services/user.service';
@@ -19,6 +19,9 @@ import { UserService } from './services/user.service';
     BrowserModule,
     BrowserAnimationsModule,
     MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatInputModule,
     HttpClientModule
   ],
   providers: [UserService],
